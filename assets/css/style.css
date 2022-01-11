@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0;
-  height: 400%;
+  height: 100%;
 }
 
 .container section {
@@ -29,6 +29,73 @@ body {
 }
 
 .container section:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 8rem;
+}
+
+section:first-child header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  width: 100%;
+  padding: 0.8rem 2rem;
+}
+
+section:first-child div.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 2rem;
+}
+
+.content form input[type="search"] {
+  border: none;
+
+  width: 100%;
+}
+
+.content div.information p {
+  font: normal normal 400 normal 1.5em/1.5 "Poppins", sans-serif;
+}
+
+.content h2 {
+  font: normal normal 500 normal 8em "Poppins", sans-serif;
+
+  margin-top: 1rem;
+}
+
+section:first-child header > nav > ul {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+section:first-child header > nav > ul > li > a {
+  text-decoration: none;
+  color: var(--body-bg-color);
+
+  padding: 0.8rem;
+}
+
+section:first-child header > nav ul li:last-child {
+  border: 0.2rem solid var(--body-bg-color);
+  padding: 0.4rem;
+}
+
+.container section:nth-child(odd) {
   background-color: var(--body-secondary-bg-color);
   color: var(--body-bg-color);
+}
+
+.container section:nth-child(even) {
+  background-color: var(--body-bg-color);
+  color: var(--body-secondary-bg-color);
 }
