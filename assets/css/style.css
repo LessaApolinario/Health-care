@@ -52,12 +52,37 @@ section:first-child div.content {
   justify-content: space-between;
 
   gap: 2rem;
+
+  width: 100%;
+}
+
+.content form {
+  width: 36.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 0;
+
+  border-bottom: 0.1rem solid var(--body-bg-color);
 }
 
 .content form input[type="search"] {
-  border: none;
+  border: 0;
+  width: 45rem;
+  height: 2rem;
+  
+  background-color: transparent;
+}
 
-  width: 100%;
+.content form input[type="search"]:focus {
+  outline: 0;
+}
+
+.content form label img {
+  width: 2rem;
+  height: 2rem;
 }
 
 .content div.information p {
