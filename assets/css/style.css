@@ -21,11 +21,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0;
-  height: 100%;
+
+  height: 400%;
 }
 
 .container section {
-  flex: 1 25%;
+  height: 25%;
 }
 
 .container section:first-child {
@@ -37,7 +38,7 @@ body {
 
   background-image: url('../images/herbs.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: fill;
 }
 
 section:first-child header {
@@ -59,7 +60,7 @@ section:first-child div.content {
 
   width: 100%;
 }
-
+/* TODO: add text information on the search input */
 .content form {
   width: 36.25rem;
 
@@ -112,6 +113,9 @@ section:first-child header > nav > ul > li > a {
   color: var(--body-bg-color);
 
   padding: 0.8rem;
+
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 section:first-child header > nav ul li:last-child {
@@ -127,4 +131,12 @@ section:first-child header > nav ul li:last-child {
 .container section:nth-child(even) {
   background-color: var(--body-bg-color);
   color: var(--body-secondary-bg-color);
+}
+
+button {
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: capitalize;
 }
