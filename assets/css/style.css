@@ -71,6 +71,19 @@ section:first-child div.content {
   line-height: 0;
 
   border-bottom: 0.1rem solid var(--body-bg-color);
+
+  position: relative;
+
+  z-index: 1;
+}
+
+.content form span {
+  position: absolute;
+  left: 2rem;
+
+  font: normal normal 300 normal 1.5rem "Poppins", sans-serif;
+  
+  z-index: -1;
 }
 
 .content form input[type="search"] {
@@ -90,6 +103,8 @@ section:first-child div.content {
 .content form label img {
   width: 2rem;
   height: 2rem;
+
+  cursor: pointer;
 }
 
 .content div.information p {
