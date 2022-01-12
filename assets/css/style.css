@@ -159,6 +159,10 @@ h2 {
   text-transform: capitalize;
 }
 
+.natural-medicines {
+  background: url('../images/licorice.png') no-repeat top right;
+}
+
 .natural-medicines .presentation {
   display: flex;
   flex-direction: column;
