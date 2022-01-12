@@ -6,7 +6,7 @@
 
 :root {
   --body-bg-color: #1A374D;
-  --dark-cold-blue-: #406882;
+  --dark-cold-blue: #406882;
   --cold-blue: #6998AB;
   --body-secondary-bg-color: #B1D0E0;
 }
@@ -91,11 +91,11 @@ section:first-child div.content {
 }
 
 .content div.information p {
-  font: normal normal 400 normal 1.5em/1.5 "Poppins", sans-serif;
+  font: normal normal 400 normal 1.5rem/1.5 "Poppins", sans-serif;
 }
 
 .content h2 {
-  font: normal normal 500 normal 8em "Poppins", sans-serif;
+  font: normal normal 500 normal 8rem "Poppins", sans-serif;
 
   margin-top: 1rem;
 }
@@ -135,8 +135,76 @@ section:first-child header > nav ul li:last-child {
 
 button {
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 h2 {
   text-transform: capitalize;
+}
+
+.natural-medicines .presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+  padding: 0 6.5rem;
+
+  position: relative;
+
+  height: 100%;
+}
+
+.natural-medicines .presentation::after {
+  content: "";
+  
+  position: absolute;
+  top: 0rem;
+  right: 42.5rem;
+
+  width: 0.0625rem;
+  height: 100%;
+
+  background-color: var(--cold-blue);
+}
+
+.natural-medicines .presentation h2 {
+  margin-top: 10rem;
+  
+  padding-left: 0.5rem;
+
+  font: normal normal bold normal 3.2rem "Poppins", sans-serif;
+
+  position: relative;
+}
+
+.natural-medicines .presentation h2::before {
+  content: "";
+  
+  position: absolute;
+  top: -10rem;
+  left: 0;
+
+  width: 0.0625rem;
+  height: 13.4375rem;
+
+  background-color: var(--cold-blue);
+}
+
+.natural-medicines .presentation p {
+  opacity: 0.5;
+  margin-left: 0.5rem;
+
+  width: 29.7109375rem;
+  font: normal normal 400 normal 1rem "Poppins", sans-serif; 
+}
+
+.natural-medicines .presentation button:last-child {
+  border: 0;
+
+  padding: 1rem;
+  margin-left: 0.5rem;
+
+  color: var(--body-bg-color);
+  background-color: var(--cold-blue);
 }
