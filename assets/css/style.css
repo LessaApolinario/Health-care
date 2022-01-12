@@ -83,6 +83,8 @@ section:first-child div.content {
 
 .content form input[type="search"]:focus {
   outline: 0;
+
+  caret-color: var(--body-bg-color);
 }
 
 .content form label img {
@@ -206,5 +208,9 @@ h2 {
   margin-left: 0.5rem;
 
   color: var(--body-bg-color);
+  background-color: var(--cold-blue);
+}
+
+::selection {
   background-color: var(--cold-blue);
 }
