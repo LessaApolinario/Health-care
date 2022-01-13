@@ -145,7 +145,7 @@ section:first-child header > nav ul li:last-child {
   color: var(--body-bg-color);
 }
 
-.container section:nth-child(even) {
+.container section:nth-child(even), aside:last-child {
   background-color: var(--body-bg-color);
   color: var(--body-secondary-bg-color);
 }
@@ -295,6 +295,10 @@ h2 {
   padding-top: 0.5rem;
 
   font-weight: 500;
+}
+
+.container aside:last-child {
+  height: 25%;
 }
 
 ::selection {
