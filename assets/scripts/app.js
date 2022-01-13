@@ -10,3 +10,20 @@ search.addEventListener('focus', () => {
 search.addEventListener('blur', () => {
   spanPlaceholder.textContent = initialSpanText;
 });
+
+// The last input
+
+const lastInput = document.querySelector(
+  '.extra-info form input[type="search"]'
+);
+const lastSpan = document.querySelector('.extra-info form span');
+
+const initialLastSpanText = lastSpan.textContent;
+
+lastInput.addEventListener('focus', () => {
+  lastSpan.textContent = '';
+});
+
+lastInput.addEventListener('blur', () => {
+  lastSpan.textContent = initialLastSpanText;
+});
