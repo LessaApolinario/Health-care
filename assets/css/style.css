@@ -5,16 +5,16 @@
 }
 
 :root {
-  --body-bg-color: #1A374D;
+  --body-bg-color: #1a374d;
   --dark-cold-blue: #406882;
-  --cold-blue: #6998AB;
-  --body-secondary-bg-color: #B1D0E0;
+  --cold-blue: #6998ab;
+  --body-secondary-bg-color: #b1d0e0;
 }
 
 body {
   height: 100vh;
 
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -45,7 +45,7 @@ section:first-child header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
   width: 100%;
   padding: 0.8rem 2rem;
 }
@@ -81,20 +81,20 @@ section:first-child div.content {
   position: absolute;
   left: 2rem;
 
-  font: normal normal 300 normal 1.5rem "Poppins", sans-serif;
-  
+  font: normal normal 300 normal 1.5rem 'Poppins', sans-serif;
+
   z-index: -1;
 }
 
-.content form input[type="search"] {
+.content form input[type='search'] {
   border: 0;
   width: 45rem;
   height: 2rem;
-  
+
   background-color: transparent;
 }
 
-.content form input[type="search"]:focus {
+.content form input[type='search']:focus {
   outline: 0;
 
   caret-color: var(--body-bg-color);
@@ -108,11 +108,11 @@ section:first-child div.content {
 }
 
 .content div.information p {
-  font: normal normal 400 normal 1.5rem/1.5 "Poppins", sans-serif;
+  font: normal normal 400 normal 1.5rem/1.5 'Poppins', sans-serif;
 }
 
 .content h2 {
-  font: normal normal 500 normal 8rem "Poppins", sans-serif;
+  font: normal normal 500 normal 8rem 'Poppins', sans-serif;
 
   margin-top: 1rem;
 }
@@ -145,7 +145,7 @@ section:first-child header > nav ul li:last-child {
   color: var(--body-bg-color);
 }
 
-.container section:nth-child(even), aside:last-child {
+.container section:nth-child(even) {
   background-color: var(--body-bg-color);
   color: var(--body-secondary-bg-color);
 }
@@ -153,6 +153,8 @@ section:first-child header > nav ul li:last-child {
 button {
   text-transform: uppercase;
   font-weight: bold;
+
+  width: 9.4668125rem;
 
   cursor: pointer;
 }
@@ -179,8 +181,8 @@ h2 {
 }
 
 .natural-medicines .presentation::after {
-  content: "";
-  
+  content: '';
+
   position: absolute;
   top: 0rem;
   right: 42.5rem;
@@ -193,17 +195,17 @@ h2 {
 
 .natural-medicines .presentation h2 {
   margin-top: 10rem;
-  
+
   padding-left: 0.5rem;
 
-  font: normal normal bold normal 3.2rem "Poppins", sans-serif;
+  font: normal normal bold normal 3.2rem 'Poppins', sans-serif;
 
   position: relative;
 }
 
 .natural-medicines .presentation h2::before {
-  content: "";
-  
+  content: '';
+
   position: absolute;
   top: -10rem;
   left: 0;
@@ -219,7 +221,7 @@ h2 {
   margin-left: 0.5rem;
 
   width: 29.7109375rem;
-  font: normal normal 400 normal 1rem "Poppins", sans-serif; 
+  font: normal normal 400 normal 1rem 'Poppins', sans-serif;
 }
 
 .natural-medicines .presentation button:last-child {
@@ -251,22 +253,23 @@ h2 {
   gap: 2rem;
 }
 
-.opinions .market, .opinions .client-opinion {
+.opinions .market,
+.opinions .client-opinion {
   width: 50%;
 }
 
 .market h2 {
   margin-top: 5rem;
-  
+
   padding-left: 0.5rem;
 
-  font: normal normal bold normal 3.2rem "Poppins", sans-serif;
+  font: normal normal bold normal 3.2rem 'Poppins', sans-serif;
 }
 
 .market p {
   margin-left: 0.5rem;
 
-  font: normal normal 400 normal 1rem "Poppins", sans-serif;
+  font: normal normal 400 normal 1rem 'Poppins', sans-serif;
 }
 
 .market button {
@@ -284,7 +287,7 @@ h2 {
 }
 
 .client-opinion p {
-  font: normal normal 400 normal 1rem "Poppins", sans-serif;
+  font: normal normal 400 normal 1rem 'Poppins', sans-serif;
 }
 
 .client-opinion p:first-child {
@@ -299,6 +302,84 @@ h2 {
 
 .container aside:last-child {
   height: 25%;
+
+  background-color: var(--cold-blue);
+  color: var(--dark-cold-blue);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  gap: 1rem;
+}
+
+aside:last-child h2 {
+  font: normal normal bold normal 3.2rem 'Poppins', sans-serif;
+  margin-top: -8.8rem;
+}
+
+aside:last-child form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  position: relative;
+
+  line-height: 0;
+
+  width: 100%;
+
+  z-index: 1;
+}
+
+aside:last-child form span {
+  position: absolute;
+  top: 0.6rem;
+  left: 26rem;
+
+  font: normal normal 300 normal 1.5rem 'Poppins', sans-serif;
+
+  z-index: -1;
+}
+
+aside:last-child form input[type='search'] {
+  outline: 0;
+
+  background-color: transparent;
+
+  width: 25rem;
+  padding: 1rem;
+  border: 0.2rem solid var(--dark-cold-blue);
+}
+
+aside:last-child form button {
+  border: 0;
+  padding: 1rem;
+
+  height: 3.3359375rem;
+
+  background-color: var(--dark-cold-blue);
+  color: var(--cold-blue);
+}
+
+aside:last-child nav {
+  width: 70%;
+}
+
+aside:last-child nav > ul {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+aside:last-child nav > ul li a {
+  text-decoration: none;
+
+  color: var(--dark-cold-blue);
 }
 
 ::selection {
