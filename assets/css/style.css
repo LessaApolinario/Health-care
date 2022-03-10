@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -11,22 +13,20 @@
   --body-secondary-bg-color: #b1d0e0;
 }
 
-body {
-  height: 100vh;
-
-  font-family: 'Poppins', sans-serif;
+html, body, .container {
+  height: 100%;
+  width: 100%;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 0;
 
-  height: 400%;
+  min-height: 400%;
 }
 
 .container section {
-  height: 25%;
+  flex: 1;
 }
 
 .container section:first-child {
@@ -300,9 +300,7 @@ h2 {
   font-weight: 500;
 }
 
-.container aside.extra-info {
-  height: 25%;
-
+.container section.extra-info {
   background-color: var(--cold-blue);
   color: var(--dark-cold-blue);
 
@@ -314,12 +312,12 @@ h2 {
   gap: 1rem;
 }
 
-aside.extra-info h2 {
+section.extra-info h2 {
   font: normal normal bold normal 3.2rem 'Poppins', sans-serif;
   margin-top: -8.8rem;
 }
 
-aside.extra-info form {
+section.extra-info form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -334,7 +332,7 @@ aside.extra-info form {
   z-index: 1;
 }
 
-aside.extra-info form span {
+section.extra-info form span {
   position: absolute;
   top: 0.6rem;
   left: 26rem;
@@ -344,7 +342,7 @@ aside.extra-info form span {
   z-index: -1;
 }
 
-aside.extra-info form input[type='search'] {
+section.extra-info form input[type='search'] {
   outline: 0;
 
   background-color: transparent;
@@ -354,7 +352,7 @@ aside.extra-info form input[type='search'] {
   border: 0.2rem solid var(--dark-cold-blue);
 }
 
-aside.extra-info form button {
+section.extra-info form button {
   border: 0;
   padding: 1rem;
 
@@ -364,11 +362,11 @@ aside.extra-info form button {
   color: var(--cold-blue);
 }
 
-aside.extra-info nav {
+section.extra-info nav {
   width: 70%;
 }
 
-aside.extra-info nav > ul {
+section.extra-info nav > ul {
   list-style: none;
 
   display: flex;
@@ -376,7 +374,7 @@ aside.extra-info nav > ul {
   justify-content: space-between;
 }
 
-aside.extra-info nav > ul li a {
+section.extra-info nav > ul li a {
   text-decoration: none;
 
   color: var(--dark-cold-blue);
