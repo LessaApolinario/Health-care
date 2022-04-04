@@ -19,14 +19,12 @@ html, body, .container {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-
-  min-height: 400%;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .container section {
-  flex: 1;
+  height: 100vh;
 }
 
 .container section:first-child {
